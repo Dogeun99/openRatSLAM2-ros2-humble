@@ -123,8 +123,6 @@ data/*.zip
 __pycache__/
 ```
 
-위 내용을 원하시면 제가 README에 적용(이미지·링크 정리 포함)하고 현재 브랜치에 커밋해 드리겠습니다.
-
 
 Build (example):
 ```bash
