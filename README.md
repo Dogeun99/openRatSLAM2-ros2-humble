@@ -90,7 +90,7 @@ source install/setup.bash
 ros2 interface show topological_msgs/msg/TopologicalMap
 ```
 
-3. 실행 예
+3. 실행 예(My WS)
 - 터미널 A:
 ```bash
 source /opt/ros/humble/setup.bash
@@ -99,7 +99,7 @@ ros2 launch ratslam irataus.launch
 ```
 - 터미널 B (bag 재생):
 ```bash
-ros2 bag play /path/to/your.db3 --rate 1.0 --clock --start-paused --topics /irat_red/odom /irat_red/camera/image/compressed
+ros2 bag play src/ratslam/data/stlucia_2007-001.db3 --clock --rate 1.0 --start-paused --topics /stlucia/camera/image/compressed
 # 스페이스로 재생/일시정지
 ```
 
@@ -190,4 +190,5 @@ ros2 bag play data/oxford_newcollege/oxford_newcollege.db3 --rate 1.0 --clock --
 
 ```bash
 ros2 bag play data/stlucia_2007/stlucia_2007.db3 --rate 1.0 --clock --start-paused --topics /irat_red/odom /irat_red/camera/image/compressed
+
 ```
